@@ -1,2 +1,2 @@
 # pkg-manager
-a pakage manager.
+a package manager.
