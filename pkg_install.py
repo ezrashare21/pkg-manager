@@ -33,30 +33,6 @@ def cleanDir(input_):
         except NotADirectoryError:
             os.remove(x)
 
-#extract main
-with ZipFile("pkg.zip", "r") as zip:
-    data = zip.extract("data.txt")
-    data = open("data.txt")
-    
-    filesNum = int(data.read())
-    print(filesNum)
-    
-    data.close()
-    
-    os.remove("data.txt")
-
-print("creating list...")
-
-number = 0
-files = []
-while number != filesNum:
-    number += 1
-    files.append(number)
-
-print(len(files))
-
-print("getting data...")
-
 def removeNS(input_):
     output_ = []
     number = 0
@@ -79,6 +55,32 @@ def removeNS(input_):
            output_.append(x) 
     print("end")
     return(output_)
+
+#extract main
+with ZipFile("pkg.zip", "r") as zip:
+    data = zip.extract("data.txt")
+    data = open("data.txt")
+    
+    filesList = removeNS(data.readlines())
+    
+    filesNum = int(filesList[0])
+    print(filesNum)
+    
+    data.close()
+    
+    os.remove("data.txt")
+
+print("creating list...")
+
+number = 0
+files = []
+while number != filesNum:
+    number += 1
+    files.append(number)
+
+print(len(files))
+
+print("getting data...")
 
 downloadfiledata = []
 
