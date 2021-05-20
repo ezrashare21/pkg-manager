@@ -2,6 +2,12 @@ from zipfile import ZipFile
 from pathlib import Path as path_lib
 import os
 
+#
+# MIT License
+#
+# Copyright (c) 2021 ezrashare21
+#
+
 def cleanDir(input_):
     print("clearing files....")
     
