@@ -2,4 +2,4 @@
 a package manager.
 
 install:
-/bin/bash "$(https://raw.githubusercontent.com/ezrashare21/pkg-manager/main/install.sh)"
+git clone https://github.com/ezrashare21/pkg-manager
