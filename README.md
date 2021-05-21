@@ -4,5 +4,5 @@ a package manager.
 install:
 
 ```
-git clone https://github.com/ezrashare21/pkg-manager
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/ezrashare21/pkg-manager/main/install.sh)" 
 ```
