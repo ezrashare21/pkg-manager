@@ -5,4 +5,4 @@ rm install.sh
 rm README.md
 rm -i LICENSE
 
-rm -r .git
+rm -rf .git
