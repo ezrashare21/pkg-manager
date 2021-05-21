@@ -1,2 +1,7 @@
 git clone https://github.com/ezrashare21/pkg-manager
-rm pkg-manager/install.sh
+cd pkg-manager
+
+rm install.sh
+rm README.md
+
+rmdir -r .git
