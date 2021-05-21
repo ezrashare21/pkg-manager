@@ -4,4 +4,4 @@ cd pkg-manager
 rm install.sh
 rm README.md
 
-rmdir -R .git
+rm -R .git
