@@ -3,5 +3,6 @@ cd pkg-manager
 
 rm install.sh
 rm README.md
+rm -i LICENSE
 
-rm -R .git
+rm -r .git
