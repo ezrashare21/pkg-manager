@@ -1,5 +1,8 @@
 # pkg-manager
-a package manager.
+
+![](pkgmanager.png)
+
+a simplisic package manager made for anyone.
 
 install:
 
